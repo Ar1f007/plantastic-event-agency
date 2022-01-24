@@ -85,8 +85,13 @@ body {
 .selected-btn:focus {
   background-color: var(--color-white-1);
   color: var(--color-gray-1);
+  border-color: var(--color-white-1);
 }
 
+.toast,
+.toast-btn-close {
+  left: 90%;
+}
 /* FAQ section */
 #faq .accordion-item {
   border: 1px solid var(--color-white-2);
