@@ -6,6 +6,7 @@
   --color-gray-1: #444;
   --color-gray-2: #838383;
   --color-pink-1: #f29ea4;
+  --color-blue-1: #3f87f5;
 }
 
 body {
@@ -13,9 +14,12 @@ body {
   color: var(--color-gray-1);
 }
 
+.navbar-brand {
+  font-size: calc(0.75em + 1vmin);
+}
+
 .navbar-brand span:first-of-type {
   font-family: 'Dancing Script', cursive;
-  font-size: 1.8rem;
   display: block;
   color: var(--color-black-1);
 }
@@ -23,6 +27,17 @@ body {
 .navbar-brand span:last-of-type {
   font-weight: 600;
   color: var(--color-gray-2);
+}
+
+.carousel-caption {
+  top: 60%;
+}
+
+.card {
+  transition: all 0.2s;
+}
+.card:hover {
+  transform: scale(0.95);
 }
 
 .list {
@@ -35,9 +50,6 @@ body {
   font-weight: 600;
   color: var(--color-pink-1);
   margin-right: 0.8rem;
-}
-.ds {
-  outline: 1px solid red;
 }
 
 .selected-package {
@@ -88,10 +100,33 @@ body {
   border-color: var(--color-white-1);
 }
 
-.toast,
+.hot-badge {
+  left: 90%;
+}
+
+.toast {
+  width: 240px;
+  top: 0;
+}
+
+.toast {
+  left: 80%;
+}
+
+.toast::before {
+  content: '';
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-blue-1);
+}
+
 .toast-btn-close {
   left: 90%;
 }
+
 /* FAQ section */
 #faq .accordion-item {
   border: 1px solid var(--color-white-2);
@@ -136,3 +171,27 @@ body {
   display: block;
 }
 /* End of Footer */
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+  .carousel-caption {
+    width: 80%;
+    top: 50%;
+    z-index: 100;
+  }
+
+  .carousel-caption h3 {
+    font-size: 14px;
+  }
+
+  .toast {
+    left: 30%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .carousel-caption {
+    top: 10%;
+  }
+}
+/* End of Responsive */
