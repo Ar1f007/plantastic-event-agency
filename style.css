@@ -31,10 +31,19 @@ body {
 
 .carousel-caption {
   top: 60%;
+  color: var(--color-white-2);
+}
+
+.btn-sm {
+  color: var(--color-gray-1);
 }
 
 .card {
   transition: all 0.2s;
+}
+
+.card-text {
+  color: var(--color-gray-2);
 }
 .card:hover {
   transform: scale(0.95);
@@ -190,8 +199,10 @@ body {
 }
 
 @media screen and (max-width: 580px) {
-  .carousel-caption {
-    top: 10%;
+  .carousel-item img {
+    height: 350px;
+    width: auto;
+    object-fit: cover;
   }
 }
 /* End of Responsive */
