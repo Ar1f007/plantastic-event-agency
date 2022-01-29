@@ -29,6 +29,10 @@ body {
   color: var(--color-gray-2);
 }
 
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
 .carousel-caption {
   top: 60%;
   color: var(--color-white-2);
