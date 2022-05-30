@@ -1,5 +1,9 @@
 # Convention Center Assignment
 
-## [https://classroom.github.com/a/DSUQJcwB](https://classroom.github.com/a/DSUQJcwB)
+It was the 3rd assignment provided by Programming Hero to me. Task was to built something related to event management. Also one of the important task was to make it responsive.
 
-### Private Repository Link: [https://classroom.github.com/a/DSUQJcwB](https://classroom.github.com/a/DSUQJcwB)
+## Tech used
+
+- HTML
+- CSS
+- Bootstrap
